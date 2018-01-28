@@ -72,7 +72,7 @@ drop.get("hello", ":num") { req in
 
 //////////////////////////////////////
 
-drop.post("whoPost") { request in
+drop.post("whoPostMessage") { request in
     
     
     let name: String = request.data["name"]?.string ?? "GG"
