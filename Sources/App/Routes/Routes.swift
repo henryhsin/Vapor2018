@@ -1,5 +1,5 @@
 import Vapor
-
+import HTTP
 extension Droplet {
     func setupRoutes() throws {
         get("hello") { req in
@@ -18,8 +18,19 @@ extension Droplet {
             return req.description
         }
 
-        get("description") { req in return req.description }
+        get("description") { req in
+            return req.description
+        }
         
         try resource("posts", PostController.self)
+        
+        
+        
+        //My Api
+        get("helloVipor") {req in
+            return "Hello Vapor"
+        }
+        
+        
     }
 }

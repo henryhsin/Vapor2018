@@ -1,5 +1,6 @@
 import FluentProvider
 
+
 extension Config {
     public func setup() throws {
         // allow fuzzy conversions for these types
